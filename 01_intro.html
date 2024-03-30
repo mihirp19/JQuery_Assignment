@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- JQuery is a js library
+    CDN import is important
+    Syntax:
+        $(selector).method(function); -->
+    <p>This is hide event</p>
+    <p class="para">This is JQuery</p>
+    <button id="btn">Hide</button>
+    <button id="btn2">Show</button>
+    <button id="toggle">Toggle</button>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $(".para").hide(500)
+            })
+        })
+        $(document).ready(function(){
+            $("#btn2").click(function(){
+                $(".para").show(500)
+            })
+        })
+        $(document).ready(function(){
+            $("#toggle").click(function(){
+                $(".para").toggle(500)
+            })
+        })
+
+
+    </script>
+</body>
+</html>

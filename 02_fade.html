@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="jquery-3.7.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body style="text-align: center;">
+    <h2>JQuery Fade in and Fade out</h2>
+    <button class="btn2">Fade Out</button>
+    <button class="btn1">Fade In</button>
+    <script>
+        $(document).ready(function(){
+            $('.btn2').click(function(){
+                $('h2').fadeOut(1000)
+            })
+        })
+        $(document).ready(function(){
+            $('.btn1').click(function(){
+                $('h2').fadeIn(1000)
+            })
+        })
+    </script>
+</body>
+</html>
+<!-- Tasks:
+slideIn, slideOut
+Animate -->

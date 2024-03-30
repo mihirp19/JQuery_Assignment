@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <p>This is a Hide Evenets</p>
+    <p class="para">this is Jquery</p>
+
+    <button id="btn">Hide</button>
+    <button id="show">show</button>
+    <button id="toggle">toggle</button>
+   
+
+    <script>
+        // hide
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $(".para").hide(1000)
+            })
+        })
+        //Show
+
+        $(document).ready(function(){
+            $("#show").click(function(){
+                $(".para").show(1000)
+            })
+        })
+
+      
+        // toogle
+        $(document).ready(function(){
+            $("#toggle").click(function(){
+                $(".para").toggle(1000)
+            })
+        })
+        
+    </script>
+</body>
+</html>
